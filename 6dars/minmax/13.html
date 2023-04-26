@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    0
+  </head>
+  <body>
+    <script>
+      let n = +prompt("n = ");
+      let a;
+      let min = Number.MAX_VALUE;
+      for (let i = 1; i <= n; i++) {
+        a = +prompt(`${i} - tortburchkning kiriting: `);
+        console.log(a);
+      }
+      for (let i = 1; i <= n; i++) {
+        if (a[i] % 2 == 1) {
+          min = a[i];
+          if (a[i] < min) {
+            min = a[i];
+          }
+        }
+      }
+      alert(`${min}`);
+    </script>
+  </body>
+</html>

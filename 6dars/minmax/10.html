@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("n = ");
+      let a;
+      let min = Number.MAX_VALUE;
+      let max = Number.MIN_VALUE;
+      let joykichik = 0;
+      let joykotta = 0;
+      for (let i = 1; i <= n; i++) {
+        a = +prompt(`${i} - tortburchkning kiriting: `);
+        console.log(a);
+        if (min > a) {
+          min = a;
+          joykotta = i;
+        }
+        if (max < a) {
+          max = a;
+          joykichik = i;
+        }
+      }
+      if (joykichik > joykotta) {
+        alert(`${joykotta}`);
+      } else {
+        alert(`${joykichik}`);
+      }
+    </script>
+  </body>
+</html>

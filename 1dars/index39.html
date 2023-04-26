@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 2;
+      let b = 5;
+      let c = 2;
+      let discriminant = Math.pow(b, 2) - 4 * a * c;
+
+      if (discriminant > 0) {
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        console.log(`Tenglama 2 ta yechimga ega: x1 = ${x1}, x2 = ${x2}`);
+      } else if (discriminant === 0) {
+        let x = -b / (2 * a);
+        console.log(`Tenglama 1 ta yechimga ega: x = ${x}`);
+      } else {
+        console.log("Tenglama haqiqiy yechimga ega emas");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Game</h1>
+    <script>
+      let random = Math.floor(Math.random() * 100);
+      alert(random);
+      let a = +prompt("son kirirting :");
+      let i = 9;
+      while (a != random && i > 0) {
+        if (a > random)
+          alert("siz kiritkan son katta" + "sizda : " + i + "jon qoldi");
+        else alert("Siz kiritgan son kichkina" + "sizda : " + i + "jon qoldi");
+        a = +prompt("sonni qayta kiriting:");
+        i--;
+      }
+      alert("Toptingiz");
+    </script>
+  </body>
+</html>

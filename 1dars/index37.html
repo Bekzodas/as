@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let V1 = 60; // km/soat
+      let V2 = 80; // km/soat
+      let S = 200; // km
+
+      let T = S / (V1 + V2); // orqaga yurish vaqti
+      let S2 = V2 * T; // orqaga yurish masofasi
+
+      console.log(
+        `ular bir-biri tomonga harakatlana boshlashdan keyin ular orasidagi masofa: ${S2} km`
+      );
+    </script>
+  </body>
+</html>

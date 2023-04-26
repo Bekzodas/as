@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let km1 = 10;
+      let soat1 = 5;
+      let km2 = 20;
+      let soat2 = 3;
+      let s = 45;
+      let t = 2;
+
+      let v1 = km1 / soat1;
+      let v2 = km2 / soat2;
+
+      let t1 = s / (v1 + v2);
+      let t2 = t + t1;
+
+      console.log(
+        `Qayiqlar bir-biriga ${t2} soatdan keyin %c${s} km %cmasofada %cular`,
+        "color:blue",
+        "color:black",
+        "color:blue"
+      );
+    </script>
+  </body>
+</html>
